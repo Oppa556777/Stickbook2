@@ -1,0 +1,24 @@
+{
+  "name": "stitchbook-enterprise",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "description": "StitchBook Enterprise v2 — Tailoring & garment order management studio",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^9.3.0",
+    "@mui/material": "^9.3.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
+    "vite": "^6.3.5"
+  }
+}

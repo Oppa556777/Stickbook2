@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Glowing crystal sparkles used by the advanced search bar --- */
+.crystal-spark {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+  border-radius: 3px;
+  transform: rotate(45deg);
+  background: linear-gradient(135deg, #b9e6ff, #7c6cff, #ffffff);
+  filter: drop-shadow(0 0 6px rgba(124, 108, 255, 0.9));
+  animation: sb-twinkle 2.4s ease-in-out infinite;
+  opacity: 0;
+}
+
+@keyframes sb-twinkle {
+  0%,
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) scale(0.4);
+  }
+  50% {
+    opacity: 0.95;
+    transform: rotate(45deg) scale(1.1);
+  }
+}
+
+/* --- Card entrance animations --- */
+@keyframes sb-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sb-rise {
+  animation: sb-rise 0.6s ease both;
+}
+
+@keyframes sb-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sb-fade {
+  animation: sb-fade 0.8s ease both;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 108, 255, 0.3);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}

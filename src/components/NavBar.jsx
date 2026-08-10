@@ -18,6 +18,7 @@ import BoltRounded from '@mui/icons-material/BoltRounded';
 import { crystalGradient } from '../theme';
 import SettingsDrawer from './SettingsDrawer';
 import NewOrderDialog from './NewOrderDialog';
+import InstallApp from './InstallApp';
 
 const LogoMark = () => (
   <Box
@@ -116,6 +117,8 @@ export default function NavBar() {
             spacing={1}
             sx={{ flexGrow: 1, justifyContent: 'flex-end' }}
           >
+            <InstallApp />
+
             <Tooltip title="Notifications">
               <IconButton
                 aria-label="Notifications"

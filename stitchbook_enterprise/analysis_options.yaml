@@ -1,0 +1,11 @@
+# Minimal analysis options that rely only on SDK built-in lints
+# (no external flutter_lints package) so the project stays fully offline-buildable.
+analyzer:
+  language:
+    strict-casts: false
+
+linter:
+  rules:
+    avoid_print: true
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true

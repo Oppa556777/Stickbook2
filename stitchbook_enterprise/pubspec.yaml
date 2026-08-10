@@ -1,0 +1,23 @@
+name: stitchbook_enterprise
+description: >-
+  StitchBook Enterprise v2 — Tailoring & garment order management studio.
+  Material 3 Flutter build. Self-contained (SDK-only dependencies) so it
+  resolves and builds without any blocked external packages.
+version: 2.0.0+2
+publish_to: none
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+# No external packages: material/icons come bundled with the Flutter SDK,
+# keeping the app fully buildable offline once the Flutter SDK is present.
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

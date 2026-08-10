@@ -1,2 +1,15 @@
 node_modules/
 dist/
+
+# Flutter / Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter_assets/
+.dart_tool
+*.iml
+.idea/
+ios/Pods/
+ios/.symlinks/
